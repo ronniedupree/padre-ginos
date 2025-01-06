@@ -1,6 +1,6 @@
 import { useState, useEffect, useDebugValue } from "react";
 
-export const usePizzaOfTheDay = () => {
+export const usePizzaOfTheDay = (props) => {
   const [pizzaOfTheDay, setPizzaOfTheDay] = useState(null);
   useDebugValue(
     pizzaOfTheDay ? `${pizzaOfTheDay.id} : ${pizzaOfTheDay.name}` : "loading",
