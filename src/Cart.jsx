@@ -3,7 +3,7 @@ const intl = new Intl.NumberFormat("en-US", {
   currency: "USD",
 });
 
-const Cart = ({ cart, checkout }) => {
+export default function Cart({ cart, checkout }) {
   let total = 0;
   for (let i = 0; i < cart.length; i++) {
     const current = cart[i];
@@ -26,6 +26,4 @@ const Cart = ({ cart, checkout }) => {
       <button onClick={checkout}>Checkout</button>
     </div>
   );
-};
-
-export default Cart;
+}

@@ -7,7 +7,7 @@ const App = () => {
   return (
     <StrictMode>
       <div>
-        <h1 className="logo">Padre Gino's - Order Now!</h1>
+        <h1 className="logo">Padre Gino&apos;s - Order Now!</h1>
         <Order />
         <PizzaOfTheDay />
       </div>
