@@ -13,6 +13,8 @@ dist/
 /.next/
 /out/
 
+/api/node_modules
+
 # production
 /build
 
