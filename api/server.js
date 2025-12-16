@@ -200,7 +200,7 @@ server.post("/api/order", async function createOrder(req, res) {
 
     await db.run("COMMIT");
 
-    res.send({ orderId });
+    res.send({ orderId: orderId });
   } catch (error) {
     req.log.error(error);
     await db.run("ROLLBACK");
