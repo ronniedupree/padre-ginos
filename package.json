@@ -34,6 +34,7 @@
     "@vitejs/plugin-react": "^4.3.1",
     "@vitest/coverage-v8": "^4.0.16",
     "@vitest/ui": "^4.0.16",
+    "babel-plugin-react-compiler": "^19.0.0-beta-af1b7da-20250417",
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.1",
@@ -41,6 +42,8 @@
     "happy-dom": "^20.0.11",
     "playwright": "^1.48.0",
     "prettier": "^3.7.4",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "vite": "^7.3.0",
     "vitest": "^3.2.4",
     "vitest-browser-react": "^2.0.2",
@@ -48,8 +51,6 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.59.13",
-    "@tanstack/react-router": "^1.65.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@tanstack/react-router": "^1.65.0"
   }
 }
