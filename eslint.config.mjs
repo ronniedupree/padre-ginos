@@ -19,7 +19,7 @@ export default [
       },
     },
   },
-  reactPlugin.configs.flat["jsx-runtime"],
+  reactPlugin.configs.flat["tsx-runtime"],
   ...pluginQuery.configs["flat/recommended"],
   {
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
