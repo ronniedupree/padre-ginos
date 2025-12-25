@@ -29,7 +29,6 @@ function ErrorBoundaryWrappedPastOrderRoutes(props) {
       >
         <PastOrdersRoute loadedPromise={loadedPromise} page={page} setPage={setPage} {...props} />
       </Suspense>
-      
     </ErrorBoundary>
   )
 }

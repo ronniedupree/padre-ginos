@@ -8,7 +8,7 @@ import { CartContext } from '../contexts';
 
 export const Route = createRootRoute({
   component: () => {
-    const cartHook = useState([])
+    const cartHook = useState([]);
 
     return (
       <>

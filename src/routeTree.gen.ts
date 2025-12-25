@@ -13,6 +13,7 @@ import { createFileRoute } from '@tanstack/react-router'
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+
 // Create Virtual Routes
 
 const PastLazyImport = createFileRoute('/past')()
@@ -143,13 +144,13 @@ export const routeTree = rootRoute
       ]
     },
     "/": {
-      "filePath": "index.lazy.jsx"
+      "filePath": "index.lazy.tsx"
     },
     "/contact": {
-      "filePath": "contact.lazy.jsx"
+      "filePath": "contact.lazy.tsx"
     },
     "/order": {
-      "filePath": "order.lazy.jsx"
+      "filePath": "order.lazy.tsx"
     },
     "/past": {
       "filePath": "past.lazy.jsx"

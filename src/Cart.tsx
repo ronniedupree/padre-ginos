@@ -7,7 +7,7 @@ const intl = new Intl.NumberFormat("en-US", {
 })
 
 type CartProps = {
-  cart: [CartItem],
+  cart: CartItem[],
   checkout: React.MouseEventHandler<HTMLButtonElement>
 }
 

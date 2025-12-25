@@ -1,16 +1,14 @@
-export type Pizza = {
+export type PizzaItem = {
   id: string,
   name: string,
   category: string,
   description: string,
   image: string,
-  sizes: PizzaSizes
+  sizes: { [size: string]: number }
 }
 
-export type PizzaSizes = Record<string, number>;
-
 export type CartItem = {
-  pizza: Pizza,
+  pizza: PizzaItem,
   price: string,
   size: string
 }
