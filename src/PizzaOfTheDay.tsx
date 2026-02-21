@@ -1,4 +1,5 @@
 import { usePizzaOfTheDay } from "./usePizzaOfTheDay.tsx";
+import type {PizzaItem} from "./types.tsx";
 
 const intl = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -6,7 +7,7 @@ const intl = new Intl.NumberFormat("en-US", {
 });
 
 const PizzaOfTheDay = () => {
-  const pizzaOfTheDay = usePizzaOfTheDay();
+  const pizzaOfTheDay: PizzaItem = usePizzaOfTheDay();
 
   if (!pizzaOfTheDay) {
     return <div>Loading...</div>

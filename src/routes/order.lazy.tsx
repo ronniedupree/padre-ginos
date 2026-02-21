@@ -59,6 +59,9 @@ function Order() {
   }, [])
 
   function addToCart() {
+    if (!selectedPizza) {
+      return;
+    }
     setCart([...cart, { pizza: selectedPizza, size: pizzaSize, price }]);
   }
 

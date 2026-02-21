@@ -7,7 +7,7 @@ interface ModalProps {
 
 const Modal = ({ children }: ModalProps) => {
   const elRef: MutableRefObject<HTMLElement | undefined> = useRef();
-  
+
   if (elRef.current === undefined) {
     elRef.current = document.createElement("div");
   }
@@ -17,7 +17,7 @@ const Modal = ({ children }: ModalProps) => {
 
     if (modalRoot && elRef.current) {
       modalRoot.appendChild(elRef.current);
-      return () =>  { 
+      return () => {
         modalRoot.removeChild(elRef.current!);
       }
     }

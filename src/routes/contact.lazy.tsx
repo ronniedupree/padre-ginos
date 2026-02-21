@@ -13,7 +13,7 @@ function ContactRoute() {
     mutationKey: ["contact"],
     mutationFn: function (formData: FormData) {
       const formInfo: ContactInformation = {
-        name: formData.get("name") as string, 
+        name: formData.get("name") as string,
         email: formData.get("email") as string,
         message: formData.get("message") as string
       }
